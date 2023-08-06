@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Portfolio</title>
+  <script src="https://kit.fontawesome.com/a5617a289c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+      <nav>
+        <!--<img src ="images/narayan.PNG" class ="logo">-->
+        <p id = "logo"><span id = "firstletter">N</span>arayan.</p>
+        <ul id="sidemenu">
+          <li><a href = "#header" >Home</a></li>
+          <li><a href = "#about" >About </a></li>
+          <li><a href = "#services" >Services</a></li>
+          <li><a href = "#my-work" >Portfolio</a></li>
+          <li><a href = "#contact" >Contact</a></li>
+          <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p><span class = "multiple-text"></span></p>
+        <h1>Hi, I am <span>Narayan</span><br> From India</h1>
+      </div>
+    </div>
+ </div>
+<!-------------------about me section ----------------->
+ <div id = "about" >
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        
+        <img src="./images/narayanabout.jpeg" >
+      </div>
+      <div class="about-col-2">
+        <h1 class = "sub-title">About Me</h1>
+        <p>
+          A problem-solving expert with  web development skills, adept at resolving complex issues
+          efficiently. Proficient in programming languages and frameworks, delivering innovative and seamless
+          web solutions.
+
+        </p>
+        <div class="tab-titles">
+          <p class = "tab-links active-link" onclick = "opentab('skills')" >Skills</p>
+          <p class = "tab-links" onclick = "opentab('experience')" >Experience</p>
+          <p class = "tab-links" onclick = "opentab('education')" >Education</p>
+        </div>
+        <div class="tab-contents active-tab" id= "skills" >
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+            <li><span>Web Development</span><br>Web app Development</li>
+            <li><span>Problem Solving</span><br>Solving Complex problems using Programming</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id ="experience">
+          <ul>
+            <li><span>Secretary(2023-Current)</span><br>IEEE YMCA SB</li>
+            <li><span>Joint Secretary(2022-2023)</span><br>IEEE YMCA SB</li>
+          </ul>
+        </div>  
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2020-Present</span><br>Aggregate : 8.18 CGPA<br>B.Tech in Electronics and Computer Engi.</li>
+            <li><span>2019</span><br>12th CBSE - 94.4%</li>
+            <li><span>2017</span><br>10th CBSE - 10 CGPA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+<!---------------------------------------------------------------------------------------SERVICES---------------------------------------------------------------------------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae inventore quo amet mollitia ratione illum ducimus, veniam possimus. 
+          Pariatur reprehenderit amet sequi totam blanditiis impedit officia nobis, illum debitis suscipit!
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-brain"></i>
+        <h2>Problem Solving</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae inventore quo amet mollitia ratione illum ducimus, veniam possimus. 
+          Pariatur reprehenderit amet sequi totam blanditiis impedit officia nobis, illum debitis suscipit!
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop-simple"></i>
+        <h2>Creative Work</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae inventore quo amet mollitia ratione illum ducimus, veniam possimus. 
+          Pariatur reprehenderit amet sequi totam blanditiis impedit officia nobis, illum debitis suscipit!
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----------------------------------------------------------------------------PORTFOLIO---------------------------------------------------------------------------->
+ <div id="my-work">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src ="images/work-1.png">
+          <div class="layer">
+            <h3>We Care</h3>
+            <p>
+              A website promoting mental health, safety products, and
+              counseling services for improved well-being of Womens.
+            </p>
+            <a href ="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+      </div>
+      <div class="work">
+        <img src ="images/work-2.png">
+        <div class="layer">
+          <h3>Sudoku solver</h3>
+          <p>
+            Designed an algorithm to solve Sudoku Efficiently
+          </p>
+          <a href ="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src ="images/work-3.png  ">
+        <div class="layer">
+          <h3>Density Based Traffic Management</h3>
+          <p>
+            An intelligent traffic management system that regulates traffic flow based on vehicle density for efficient transportation and
+            separate provision for Emergency vehicles.
+          </p>
+          <a href ="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href ="#" class="btn">See More</a>
+  </div>
+ </div>
+
+<!-----------------------------------------------------------------------------Contact ME---------------------------------------------------------------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>npandey9818@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>8178375282</p>
+        <div class="social-icons">
+          <a href = "https://www.linkedin.com/in/narayan-pandey-aa0592267/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href = "https://www.instagram.com/npandey9818/"><i class="fa-brands fa-instagram"></i></a>
+          <a href = "https://github.com/Thelooper9818"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href ="./Narayan's Resume.pdf" download class ="btn btn2">Download CV</a>
+      </div>
+      
+      <div class="contact-right">
+        <form name = "submit-to-google-sheet">
+          <input type ="text" name="Name" placeholder="Your Name" required>
+          <input type ="email" name="Email" placeholder="Your E-mail" required>
+          <textarea name ="Message" rows ="6" placeholder="Your Message"></textarea>
+          <button type="submit" class ="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright ©️ Narayan. Made with <i class="fa-solid fa-heart"></i> by Narayan Pandey</p>
+  </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+      for(tablink of tablinks)
+      {
+        tablink.classList.remove("active-link"); /*removing the active-link  class*/
+      }
+
+      for(tabcontent of tabcontents)
+      {
+        tabcontent.classList.remove("active-tab");/*removing the active-tab  class*/
+      }
+
+      event.currentTarget.classList.add("active-link"); /*this is used to assign the red underline or active underline when the button is clicked*/   
+      document.getElementById(tabname).classList.add("active-tab"); /*we are getting element by id and here the event that triggered that click will we transfered as tabname and we have assign
+      id to each content and then we are adding the active tab class which will show the content of that particular id */
+    }
+</script> 
+
+<script>
+  var sidebar = document.getElementById("sidemenu");
+
+  function openmenu()
+  {
+    sidebar.style.right ="0";
+  }
+
+  function closemenu()
+  {
+    sidebar.style.right = "-200px";
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwxf4cvZhVWZa3v4AclvDfT5noF_uNSGeHd8IyWh3zdDwUCVdL-aETGEMyz50bLBckaCQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function() {
+          msg.innerHTML =""
+        }, 5000) /*this 5sec timer is for the alert message that is displayed on the screen after successful sending*/
+      })
+      form.reset()
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+  const typed = new Typed('.multiple-text' , {
+    strings : [ 'Programmer','Frontend Developer' ,'Problem Solver'] ,
+    typeSpeed : 90,
+    backSpeed :70,
+    backDelay :700,
+    loop :true
+  })
+</script>
+
+</body>
+</html>
