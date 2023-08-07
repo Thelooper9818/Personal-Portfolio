@@ -56,8 +56,14 @@ nav{
     align-items: center;
 }
 
+.header-text{
+    display: grid;
+    place-content: center;
+}
+
 .right{
-    padding: 10px 0px;
+    display: grid;
+    place-content: center;
 }
 
 .image{
@@ -506,3 +512,24 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
