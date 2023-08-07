@@ -8,7 +8,6 @@ Welcome to my personal portfolio! This is a website showcasing my skills, projec
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Project Screenshots](#project-screenshots)
 - [Contact](#contact)
 - [License](#license)
 
@@ -32,8 +31,7 @@ This portfolio is a reflection of my journey as a web developer. It highlights m
 2. Open the `index.html` file in your web browser.
 
 ## Usage
-Feel free to explore the portfolio and navigate through different sections. Click on project links to view the live demos or visit the project repositories to see the source code. You can also use the contact form to get in touch with me.
-
+Feel free to explore the portfolio and navigate through different sections. Click on project links to visit the project repositories to see the source code. You can also use the contact form to get in touch with me.
 
 ## Contact
 You can reach out to me through the following channels:
@@ -42,6 +40,6 @@ You can reach out to me through the following channels:
 - GitHub: [Your GitHub Profile](https://github.com/Thelooper9818)
 
 ## License
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as per your requirements.
+Feel free to use and modify the code as per your requirements.
 
 Thank you for visiting my portfolio. Happy coding! 😊
