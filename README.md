@@ -36,8 +36,8 @@ Feel free to explore the portfolio and navigate through different sections. Clic
 ## Contact
 You can reach out to me through the following channels:
 - Email: [npandey9818@gmail.com](mailto:npandey9818@gmail.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/narayan-pandey-aa0592267/)
-- GitHub: [Your GitHub Profile](https://github.com/Thelooper9818)
+- LinkedIn: [Narayan Pandey](https://www.linkedin.com/in/narayan-pandey-aa0592267/)
+- GitHub: [Thelooper9818](https://github.com/Thelooper9818)
 
 ## License
 Feel free to use and modify the code as per your requirements.
