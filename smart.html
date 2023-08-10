@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Portfolio</title>
+  <script src="https://kit.fontawesome.com/a5617a289c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <!--<img src ="images/narayan.PNG" class ="logo">-->
+        <p id="logo"><span id="firstletter">N</span>arayan</p>
+        <ul id="sidemenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about">About </a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#my-work">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+      </nav>
+
+
+      <h2 class="headline">Smart Traffic Light Management System</h2>
+      <div class="container extra-page">
+        <h3>Overview</h3>
+        <p>Our Smart Traffic Light System leverages technology to improve traffic outcomes by introducing a sensing network, which provides feedback to the existing network, so that it can adapt to the changing traffic density patterns and provide necessary signals to the controller in real-time. A robust system is able to:
+            <ol>
+                <li>Collect data from vehicle detector devices at each intersection</li>
+                <li>Dynamically adapt traffic signal timing in real time</li>
+                <li>Make incremental adjustments to the traffic signal timing based on the changes in traffic flow at each intersection</li>
+            </ol>
+        </p>
+
+        <h3>Our Prototype:</h3>
+        <p>
+            We have developed a working model to demonstrate the efficiency of our idea. In prototype we have used:
+            <ol>
+                <li>Ultrasonics Sensors: To detect the density of traffic in various lanes.</li>
+                <li>RFID Tags: To detect the Emergency Vehicles.</li>
+                <li>Arduino Mega: To process the input data and and control the traffic lights.</li>
+            </ol>
+
+            But in real life, we will be using:
+            <ol>
+                <li>Cameras and Image Processing: To detect the density of traffic and emergency vehicles.</li>
+                <li>Servers: For high speed image processing and controlling the lights.</li>
+            </ol>
+        </p>
+
+        <h3>Functioning:</h3>
+        <p>
+            <ol>
+                <li>Traffic Density Distribution:- Ultrasonic sensors have been used for detecting traffic density.</li>
+                <li>Switching of traffic lights:- If traffic density is high in any lane, system will increase the green light time for that lane. And when the density is not that much the orange light will glow.</li>
+                <li>Exit of Emergency vehicles:- We have added a clearance mechanism for emergency vehicles like ambulance and fire engines which basically works on RFID tags. RFID tags are allotted to a emergency vehicles. As soon as the RFID reader detects emergency vehicle, system will display the message on LCD screens to ask people to make way. And the system will also turn on the green light of that lane to make way.</li>
+            </ol>
+        </p>
+
+        <h3>Advantages:</h3>
+        <p>
+            <ol>
+                <li>We have added a clearance mechanism for emergency vehicles.</li>
+                <li>The inefficient traffic light switching in quad-lane system can be rectified with our project.</li>
+                <li>Unnecessary man power which was a disadvantage in existing system can be eliminated with this project.</li>
+                <li>Traffic lights will switch based on real time Traffic density feedback.</li>
+            </ol>
+        </p>
+
+        <h3>Author</h3>
+        <p>
+            This Supermarket Management System is created and maintained by <a href="https://github.com/Thelooper9818">Narayan Pandey</a>.
+        </p>
+      </div>
+
+
+      
+
+
+
+        <!-----------------------------------------------------------------------------Contact ME---------------------------------------------------------------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>npandey9818@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>8178375282</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/narayan-pandey-aa0592267/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/npandey9818/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Thelooper9818"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="./resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your E-mail" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright ©️ Narayan. Made with <i class="fa-solid fa-heart"></i> by Narayan Pandey</p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link"); /*removing the active-link  class*/
+      }
+
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab"); /*removing the active-tab  class*/
+      }
+
+      event.currentTarget.classList.add("active-link"); /*this is used to assign the red underline or active underline when the button is clicked*/
+      document.getElementById(tabname).classList.add("active-tab");
+      /*we are getting element by id and here the event that triggered that click will we transfered as tabname and we have assign
+           id to each content and then we are adding the active tab class which will show the content of that particular id */
+    }
+  </script>
+
+  <script>
+    var sidebar = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidebar.style.right = "0";
+    }
+
+    function closemenu() {
+      sidebar.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxf4cvZhVWZa3v4AclvDfT5noF_uNSGeHd8IyWh3zdDwUCVdL-aETGEMyz50bLBckaCQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function() {
+            msg.innerHTML = ""
+          }, 5000) /*this 5sec timer is for the alert message that is displayed on the screen after successful sending*/
+        })
+      form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    const typed = new Typed('.multiple-text', {
+      strings: ['Programmer', 'Frontend Developer', 'Problem Solver'],
+      typeSpeed: 90,
+      backSpeed: 70,
+      backDelay: 700,
+      loop: true
+    })
+  </script>
+
+</body>
+
+</html>

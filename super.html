@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Portfolio</title>
+  <script src="https://kit.fontawesome.com/a5617a289c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <!--<img src ="images/narayan.PNG" class ="logo">-->
+        <p id="logo"><span id="firstletter">N</span>arayan</p>
+        <ul id="sidemenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about">About </a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#my-work">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+      </nav>
+
+
+      <h2 class="headline">
+        <span>Super Market Management System</span>
+    </h2>
+      <div class="container extra-page">
+        <h3>Overview</h3>
+        <p>This Supermarket Management System is a C++ project developed using Object-Oriented Programming (OOPs) concepts. The system provides an efficient and user-friendly solution for managing various supermarket operations, including inventory management, billing, and customer information.</p>
+
+        <h3>Features</h3>
+        <p>
+            <ol>
+                <li>Product Management: Add, update, and delete products from the supermarket inventory.</li>
+                <li>Billing System: Generate itemized bills for customers with detailed pricing and discounts.</li>
+            </ol>
+        </p>
+
+        <h3>Installation</h3>
+        <p>
+            <ol>
+                <li>Clone this repository to your local machine.</li>
+                <li>Make sure you have a C++ compiler installed on your system.</li>
+                <li>Compile and run the <span class="code">main.cpp</span> file to start the Supermarket Management System.</li>
+            </ol>
+        </p>
+
+        <h3>Run Command</h3>
+        <code>if ($?) { g++ main.cpp -o main } ; if ($?) { .\main }</code>
+
+        <h3>Usage</h3>
+        <p>
+            <ol>
+                <li>Upon running the application, you will be prompted to log in with yoxur administrator credentials.</li>
+                <li>Use the menu options to navigate through various functionalities of the system.</li>
+            </ol>
+        </p>
+
+        <h3>Dependencies</h3>
+        <p>This Supermarket Management System is developed using C++ with standard libraries. There are no external dependencies required for running this application.</p>
+
+        <h3>Contributions</h3>
+        <p>Contributions to improve and enhance this Supermarket Management System are welcome. Please fork the repository, make your changes, and submit a pull request.</p>
+
+        <h3>Author</h3>
+        <p>
+            This Supermarket Management System is created and maintained by <a href="https://github.com/Thelooper9818">Narayan Pandey</a>.
+        </p>
+      </div>
+
+
+
+
+
+        <!-----------------------------------------------------------------------------Contact ME---------------------------------------------------------------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>npandey9818@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>8178375282</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/narayan-pandey-aa0592267/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/npandey9818/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Thelooper9818"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="./resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your E-mail" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright ©️ Narayan. Made with <i class="fa-solid fa-heart"></i> by Narayan Pandey</p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link"); /*removing the active-link  class*/
+      }
+
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab"); /*removing the active-tab  class*/
+      }
+
+      event.currentTarget.classList.add("active-link"); /*this is used to assign the red underline or active underline when the button is clicked*/
+      document.getElementById(tabname).classList.add("active-tab");
+      /*we are getting element by id and here the event that triggered that click will we transfered as tabname and we have assign
+           id to each content and then we are adding the active tab class which will show the content of that particular id */
+    }
+  </script>
+
+  <script>
+    var sidebar = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidebar.style.right = "0";
+    }
+
+    function closemenu() {
+      sidebar.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxf4cvZhVWZa3v4AclvDfT5noF_uNSGeHd8IyWh3zdDwUCVdL-aETGEMyz50bLBckaCQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function() {
+            msg.innerHTML = ""
+          }, 5000) /*this 5sec timer is for the alert message that is displayed on the screen after successful sending*/
+        })
+      form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    const typed = new Typed('.multiple-text', {
+      strings: ['Programmer', 'Frontend Developer', 'Problem Solver'],
+      typeSpeed: 90,
+      backSpeed: 70,
+      backDelay: 700,
+      loop: true
+    })
+  </script>
+
+</body>
+
+</html>
